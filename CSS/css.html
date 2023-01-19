@@ -23,13 +23,6 @@
         /* .을 붙이면 class가 그 뒤에 있는 걸 모두 
         여러개의 클래스가 띄어쓰기로 구분됨
         가까이 있는 명령이 더 큰 영향을 준다*/
-        .saw {
-            color:gray;
-        }
-
-        #active {
-            color:red;
-        }
 
         ol{
             border-right: 1px solid gray;
@@ -38,8 +31,21 @@
             padding: 20px;
         }
 
+        #gird ol{
+            padding-left: 33px;
+        }
+
         body{
             margin:0;
+        }
+
+        #gird{
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #article{
+            padding: 25px;
         }
 
         </style>
@@ -48,44 +54,31 @@
 
     <body>
         <h1>CSS이란 무엇인가??</h1>
-    
-        <ol>
-            <li><a href ="index.html" class="saw">INDEX</a></li>
-            <li><a href ="1.html" class="saw">HTML</a></li>
-            <li><a href ="css.html" class="saw" id="active">CSS</a></li>
-            <li><a href ="js.html" class="saw">JavaScript</a></li>
-        </ol>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div id="gird">
+            <ol>
+                <li><a href ="index.html">INDEX</a></li>
+                <li><a href ="1.html">HTML</a></li>
+                <li><a href ="css.html">CSS</a></li>
+                <li><a href ="js.html">JavaScript</a></li>
+            </ol>
+            <div id="article">
+                <h2>CSS</h2>
+                <p>
+                종속형 시트 또는 캐스케이딩 스타일 시트(영어: Cascading Style Sheet)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로 HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. 
+                W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+                </p>
+                <br>
+                <h2>제작자</h2>
+                <ul>
+                    <li><a href="https://github.com/Hong-5" 
+                        target="_blank" 
+                        title="Hong-5's git">
+                        Hong-5</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
 
-        종속형 시트 또는 캐스케이딩 스타일 시트(영어: Cascading Style Sheet)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어로 HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. 
-        <br>
-        W3C의 표준이고, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>제작자</h2>
-        <ul>
-            <li><a href="https://github.com/Hong-5" 
-                target="_blank" 
-                title="Hong-5's git">
-                Hong-5</a>
-            </li>
-        </ul>    
     </body>
 
 </html>
